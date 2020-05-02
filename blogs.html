@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <img src="images1/logo3.jpg" alt="logo" />
+        <div class="menu">
+          <a href="" id="accueil">Accueil</a>
+          <a href="../Yassir/AboutUs.html">ABOUT US</a>
+          <a href="../Yassir/CityGuide.html">CITY GUIDE</a>
+          <a href="preparation.html">preparations</a>
+          <a href="blogs.html">BLOGS</a>
+          <a href="">CONTACT US</a>
+          <a href="../Achraf/hotels.html">HOTELS</a>
+          <a href="../Achraf/resto.html">RESTAURANT</a>
+        </div>
+        <button onclick="showMenu()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="menumobile" id="menumobile">
+          <div><a href="">Accueil</a></div>
+          <div><a href="../Yassir/AboutUs.html">ABOUT US</a></div>
+          <div><a href="../Yassir/CityGuide.html">CITY GUIDE</a></div>
+          <div><a href="preparation.html">preparations</a></div>
+          <div><a href="blogs.html">BLOGS</a></div>
+          <div><a href="">CONTACT US</a></div>
+          <div><a href="../Achraf/hotels.html">HOTELS</a></div>
+          <div><a href="../Achraf/resto.html">RESTAURANT</a></div>
+        </div>
+      </div>
+      
+    </header>
+    <div class="information">
+      <p class="cont">Contact Us</p>
+      <p class="parag">
+          n'hésitez pas à nous parler si vous avez des questions
+          <br>
+          nous nous efforçons de répondre dans les 24 heures</p>
+
+      <input class="nom" id="nom" type="text" placeholder="Nom">
+      <br>
+      <input class="email" id="email" type="text" placeholder="Email">
+      <br>
+      <input class="message" id="message" type="text" placeholder="Message">
+      <br>
+
+      <input class="env" type="submit" value="Envoyer" class="notif2" onclick="validation()" />
+      <input class="ann" type="submit" value="annuler" class="notif2" onclick="annuler()" />
+
+
+
+  </div>
+    <footer>
+      <div class="background">
+        <input
+          type="text"
+          value="Email ou username"
+          class="entermail entermail2"
+        />
+        <input type="submit" value="CONNEXION" class="notif notif3" />
+      </div>
+      <div class="blank"></div>
+
+      <div class="Politique">
+        <div class="Politique2">
+          <a href="">Politique de cookies</a>
+          <div class="line5"></div>
+          <a href="">Politique de confidentialité</a>
+          <div class="line5"></div>
+          <a href="">Termes et conditions</a>
+          <div class="line5"></div>
+          <a href="">Contactez-nous</a>
+        </div>
+        <div class="icons">
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+      </div>
+      <div class="blank"></div>
+      <p>
+        This is the official website of the Ministry of Tourism, Republic of
+        Indonesia. The contents listed on this website are intended for
+        informational.
+      </p>
+    </footer>
+
+    <script>
+      function showMenu() {
+        var menuDropdown = document.getElementById("menumobile");
+        if (menuDropdown.style.display === "none") {
+          menuDropdown.style.display = "block";
+        } else {
+          menuDropdown.style.display = "none";
+        }
+      }
+      function validateEmail() {
+        let email = document.getElementById("entermail").value;
+        // alert(email);
+        let emailexp = /[^@]+@[^\.]+\..+/;
+        if (!emailexp.test(email)) {
+          alert("WRONG EMAIL ! Try again");
+        }
+        console.log(emailexp.test(email));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Accueil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!------<link rel="stylesheet" href="style.css">---->
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<!--<script src="script.js"></script>--->
+
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+<script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="form-validation.js"></script>
+</head>
+
+
+  <body>
+  
+   <!------ Include the above in your HEAD tag ---------->
+   
+   <form class="form-horizontal" name="registration" action='/user_create' method="POST">
+     <fieldset>
+       <div id="legend">
+         <legend class="">Register</legend>
+       </div>
+       <div class="control-group">
+         <!-- Username -->
+         <label class="control-label"  for="username">Username</label>
+         <div class="controls">
+           <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+           
+         </div>
+       </div>
+    
+       <div class="control-group">
+         <!-- E-mail -->
+         <label class="control-label" for="email">E-mail</label>
+         <div class="controls">
+           <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+           
+         </div>
+       </div>
+    
+       <div class="control-group">
+         <!-- Password-->
+         <label class="control-label" for="password">Password</label>
+         <div class="controls">
+           <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+           
+         </div>
+       </div>
+    
+       <div class="control-group">
+         <!-- Password -->
+         <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+         <div class="controls">
+           <input type="password" id="confirm" name="pconfirm" placeholder="" class="input-xlarge">
+           
+         </div>
+       </div>
+    
+       <div class="control-group">
+         <!-- Button -->
+         <div class="controls">
+          <input type="submit" value="Register"class="btn btn-success">
+         
+         </div>
+       </div>
+     </fieldset>
+   </form>
+      
+      <script>
+        
+      $(document).ready(function(){
+         $("form").submit(function() {
+    
+   
+    var user=$("#username").val();
+    var email =$("#email").val();
+    var password =$("#password").val();
+    var confirm =$("#confirm").val();         
+    if(username=="" ||email=="" ||password=="" ||confirm=="")
+      alert(" Tous les champs doivent etre remplis");
+    
+    if (password!==confirm)
+    alert(" les mots de passe ne sont pas identiques");
+    
+});
+
+ });
+
+      </script>
+  </body>
+
+  </html>
