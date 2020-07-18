@@ -1,0 +1,216 @@
+body{
+    background-color: #F4F4F4;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+   
+    color: #232323;
+    /* margin: 10px; */
+   
+}
+
+/* start login Form */
+.login {
+    width: 300px;
+    margin: 100px auto;
+
+}
+.login input {
+    margin-bottom: 10px;
+}
+.login .form-control{
+    background-color: #E5E5E5;
+}
+.login .btn{
+    background-color: #008dde;
+}
+.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+/* Dashboard page */
+
+.st{
+    background-color: #c0392b;
+}
+.Home-stats {
+    height: calc(100vh - 100px);
+}
+.Home-stats h2 {
+    font-size: 55px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #565657;
+}
+.Home-stats .stat {
+    background-color: #FFF;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+.Home-stats .st_members i {
+    color: #4680ff;
+}
+.Home-stats .st_pending i {
+    color: #ffb64d;
+}
+.Home-stats .st_total i {
+    color: #5E35B1;
+}
+.Home-stats .st_comments i {
+    color: #fc6180;
+}
+
+.Home-stats .stat i {
+    display: block;
+    margin-bottom: 15px;
+}
+.Home-stats .stat span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #99abb4;
+}
+.Home-stats .stat .stat_number {
+    font-size: 18px;
+    margin: 0;
+    color: #455a64;
+}
+.latest {
+    margin-top: 30px;
+}
+.latest-users li {
+    padding: 6px ;
+   overflow: hidden;
+}
+.latest-users li:nth-child(odd){
+    background-color: #EEE;
+}
+.latest-users .btn-success
+.latest-users .btn-info{
+    padding: 2px 4px;
+
+}
+.latest-users .btn-info{
+    margin-right: 5px;
+}
+/* Css Edite Members */
+
+h1{
+    font-size: 55px;
+    margin: 40px 0;
+    font-weight: bold;
+    color: #565657;
+}
+
+.main-table {
+
+    -webkit-box-shadow : 0 3px 10px #CCC;
+    -moz-box-shadow : 0 3px 10px #CCC;
+    box-shadow : 0 3px 10px #CCC;
+}
+
+.main-table td{
+
+    background-color: #FFF;
+    vertical-align: middle !important;
+}
+
+.main-table tr:first-child td {
+
+    background-color: #333;
+    color: #FFF;
+}
+
+.main-table .btn {
+    padding: 3px 10px;
+}
+
+/* catogory page */
+
+.categorie .card-body{
+    padding: 0;
+}
+.categorie .cat {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    position: relative;
+    overflow: hidden;
+}
+.categorie .cat:hover .hidden-buttons{
+    right: 10px;
+}
+
+.categorie .cat .hidden-buttons a {
+    margin-right: 5px;
+    color: #fff;
+}
+.btn-edit {
+    background-color: #28a745;
+}
+.btn-delete {
+    background-color: #dc3545;
+}
+.btn-add {
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 15px;
+}
+.btn-add i {
+    margin-right: 5px;
+}
+.btn-add:hover {
+    color: #fff;
+}
+/* .A1{
+    background-color: blue;
+    color: white;
+    width: px;
+    height: 10px;
+} */
+
+.categorie .cat:hover{
+    background-color: #EEE;
+}
+.categorie .cat .hidden-buttons  {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    top: 10px;
+   position: absolute;
+   right: -200px;
+}
+
+.categorie .cat h3{
+    margin:  0 0 10px;
+}
+.categorie .cat:last-pf-type ~ hr{
+
+    display: none;
+}
+.categorie .cat .visibility {
+
+    background-color: #d35400;
+    color: #FFF;
+    padding: 4px 6px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+.categorie .cat .commenting {
+
+    background-color: #2c3e50;
+    color: #FFF;
+    padding: 4px 6px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+.categorie .cat .ads {
+
+    background-color: #c0392b;
+    color: #FFF;
+    padding: 4px 6px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
